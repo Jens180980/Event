@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/app.js" defer></script>
+    <script src="https://kit.fontawesome.com/ab6c1254a5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/navFooter.css">
+    <title>Event Centrum | Jens Harder</title>
+</head>
+<body>
+    
+    <nav>
+            <img src="./img/EC-Logo-Web.png" alt="EC logo">
+            <button class="fas fa-bars fa-2x" id="burger"></button>
+            <ul id="ul">
+                <li><a href="#">Forside</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="#">Mission</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+     </nav>
+     <main>
+        <section id="top">
+            <article>
+                <h2>SIDSTE NYT</h2>
+                <p>Gastronomisk teambuilding er en af de mest populære former for teambuilding i øjeblikket.</p>
+                <p>Madlavning i fællesskab styrker sammenholdet og fremmer medarbejdernes kompetencer, da opgavefordelingen i et køkken er skarp og stiller krav til både ansvarlighed, kompetencer og lederevner.</p>
+                <a href="#">Læs mere</a>
+            </article>
+        </section>
+
+        <section id="middle">
+            <article id="who">
+                <h2>HVEM ER VI?</h2>
+                <p>Event Centrum er et professionelt bureau der beskæftiger sig med arrangementer og events med styrkelse af samarbejdet og medarbejderudvikling som fokus område.</p>
+                <p>Vi tilbyder alle former for teambuilding events i hele landet, tilpasset netop jeres virksomhed og med jeres værdisæt sådan at der kan drages en parallel fra vores teambuilding til virksomhedens mission statement.</p>
+                <p>Ingen kunde er for lille, og ingen opgave for stor.</p>
+                <p>Udover traditionel Teambuilding tilbyder Event Centrum en lang række mere eller mindre uforpligtende arrangementer som pakke løsninger.</p>
+            </article>
+            <section>
+                <div>
+                    <img src="./img/Trophy-Link.png" alt="kæde ikon">
+                    <article>
+                        <h4>Tilrettelagt</h4>
+                        <p>Planlægning, koordinering, og afvikling af arrangementer i alle størrelser og former</p>
+                    </article>
+                </div>
+                <div>
+                    <img src="./img/Trophy-Cup.png" alt="pokal ikon">
+                    <article>
+                        <h4>Professionelt</h4>
+                        <p>Event Centrum samarbejder udelukkende med certificerede underleverandører</p>
+                    </article>
+                </div>
+                <div>
+                    <img src="./img/Trophy-Arrows.png" alt="Pile ikon">
+                    <article>
+                        <h4>Fleksibelt</h4>
+                        <p>Konference for 1200 deltagere, eller teambuilding for 10? Vi har løsningen</p>
+                    </article>
+                </div>
+                <div>
+                    <img src="./img/Trophy-Gauge.png" alt="speedometer ikon">
+                    <article>
+                        <h4>Resultatskabende</h4>
+                        <p>Vi skaber styrkende relationer mellem ledelse, medaarbejdere, og virksomheden</p>
+                    </article>
+                </div>
+            </section>
+        </section>
+
+        <footer>
+            <div id="left-wrap">
+                <article>
+                    <h2>KONTAKT OS</h2>
+                    <p>Kontakt os for uddybende informationer om vore arrangementer og events.Du kan ringe, sende en email eller udfylde kontaktformularen, så vender een af vore medarbejdere tilbage til dig hurtigst muligt.</p>
+                </article>
+                <figure>
+                    <img src="./img/Contact-Locate.png" alt="gps ikon">
+                    <figcaption>
+                        <h4>KONTAKT OS</h4>
+                        <p>EventCentrum, Targets Alle 4, 9999 Ballerup</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/Contact-Call.png" alt="telefon ikon">
+                    <figcaption>
+                        <h4>RING TIL OS</h4>
+                        <p>+45 2234 5678 (+45 3365 6587 efter kl. 18.00)</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/Contact-Mail.png" alt="MAIL ikon">
+                    <figcaption>
+                        <h4>SKRIV TIL OS</h4>
+                        <p>Send os en mail: info@EventCentrum.dk</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div id="right-wrap">
+                <form action="">
+                        <legend>Send en besked</legend>
+                        <div class="fields">
+                          <label for="name"></label>
+                          <input type="text" id="name" required placeholder="Fulde navn"></input>
+                        </div>  
+                        <div class="fields">
+                          <label for="adress"></label>
+                          <input type="text" id="adress" required placeholder="Adresse"></input>
+                        </div>  
+                        <div class="fields">
+                          <label for="email"></label>
+                          <input type="email" id="email" required placeholder="Email"></input>
+                        </div>  
+                        <div class="fields">
+                          <label for="check">Jeg vil gerne ringes op</label>
+                          <input type="checkbox" id="check"></input>
+                          <label for="tel"></label>
+                          <input type="tel" id="tel" required placeholder="Telefon"></input>
+                        </div>  
+                        <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Besked"></textarea>
+
+                        <p id="message-wrap"></p>
+
+                        <div id="btns">
+                            <button type="button" onclick="validate(this.form)" id="submit">Send Besked</button>
+                        </div>
+                    <div id="message-wrap"></div>
+                </form>
+            </div>
+
+        </footer>
+    </main>
+</body>
+</html>

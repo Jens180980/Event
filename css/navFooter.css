@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  border: none;
+}
+
+body {
+  width: 100vw;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+nav {
+  position: relative;
+  width: 100%;
+  background-color: #6b6b6b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+}
+
+nav img {
+  margin-left: 10%;
+  width: 20%;
+}
+
+nav ul {
+  margin-left: auto;
+  margin-right: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav li a {
+  text-transform: uppercase;
+  color: white;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 1rem 0.5rem;
+  margin-left: 1rem;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+nav li a:hover {
+  background-color: darkgrey;
+}
+
+nav button {
+  position: absolute;
+  background-color: transparent;
+  top: 1vw;
+  left: 1vw;
+  display: none !important;
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin-bottom: 2rem;
+}
+
+footer #left-wrap {
+  background-color: #6b6b6b;
+  color: white;
+}
+
+footer #left-wrap article {
+  margin: 2rem;
+}
+
+footer #left-wrap figure {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem;
+}
+
+footer #left-wrap figure img {
+  width: 4vw;
+}
+
+footer #right-wrap {
+  background-color: #78868a;
+  padding: 2rem 1rem;
+}
+
+footer #right-wrap form legend {
+  color: white;
+  font-size: 2rem;
+}
+
+footer #right-wrap form input {
+  background-color: transparent;
+  border: 1px solid #b9cfd4;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+footer #right-wrap form #name, footer #right-wrap form #adress, footer #right-wrap form #email, footer #right-wrap form textarea {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #b9cfd4;
+}
+
+footer #right-wrap form ::-webkit-input-placeholder {
+  color: #b9cfd4;
+  padding: 0.25rem;
+}
+
+footer #right-wrap form :-ms-input-placeholder {
+  color: #b9cfd4;
+  padding: 0.25rem;
+}
+
+footer #right-wrap form ::-ms-input-placeholder {
+  color: #b9cfd4;
+  padding: 0.25rem;
+}
+
+footer #right-wrap form ::placeholder {
+  color: #b9cfd4;
+  padding: 0.25rem;
+}
+
+footer #right-wrap form label {
+  color: #b9cfd4;
+}
+
+footer #right-wrap form #check {
+  margin: 0 34% 0 5%;
+}
+
+footer #right-wrap form button {
+  width: 100%;
+  border: 1px solid #b9cfd4;
+  background-color: #a7a5a5;
+  padding: 0.5rem;
+  color: #d5e1e4;
+}
+
+@media screen and (max-width: 800px) {
+  nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transform: translateX(150vw);
+            transform: translateX(150vw);
+    background-color: #55caf8;
+    position: absolute;
+    right: 0;
+    top: 8vh;
+    height: 50vh;
+    width: 100vw;
+    -webkit-transition: -webkit-transform 800ms cubic-bezier(0.47, 1.64, 0.41, 0.8);
+    transition: -webkit-transform 800ms cubic-bezier(0.47, 1.64, 0.41, 0.8);
+    transition: transform 800ms cubic-bezier(0.47, 1.64, 0.41, 0.8);
+    transition: transform 800ms cubic-bezier(0.47, 1.64, 0.41, 0.8), -webkit-transform 800ms cubic-bezier(0.47, 1.64, 0.41, 0.8);
+  }
+  button {
+    display: block !important;
+  }
+  /* JS-ADDED CLASS */
+  .show {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}

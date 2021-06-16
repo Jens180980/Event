@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  border: none;
+}
+
+body {
+  width: 100vw;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+}
+
+#top {
+  background-image: url(../img/Teaser-Front.jpg);
+  background-size: cover;
+  color: white;
+  margin: 2rem 0;
+  padding: 4rem 2rem 10rem 2rem;
+}
+
+#top article {
+  position: relative;
+  width: 50%;
+}
+
+#top article h2 {
+  font-size: 3rem;
+}
+
+#top article p {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+#top article a {
+  position: absolute;
+  bottom: -35%;
+  right: 5%;
+  color: white;
+  text-decoration: underline;
+}
+
+#middle {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin: 2rem 0;
+}
+
+#middle #who {
+  background-color: #73cfee;
+}
+
+#middle #who p, #middle #who h2 {
+  color: white;
+  margin-bottom: 1rem;
+  padding: 0 2rem;
+  font-size: 1.5rem;
+}
+
+#middle #who h2 {
+  margin-top: 2rem;
+  font-size: 3rem;
+}
+
+#middle section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+#middle section div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  gap: 0.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.5rem 0;
+}
+
+#middle section div img {
+  width: 100%;
+  padding: 0 1rem;
+}
