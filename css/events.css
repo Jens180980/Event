@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  border: none;
+}
+
+body {
+  width: 100vw;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 7vw;
+}
+
+#gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 6vh 2vw;
+  margin-bottom: 10vh;
+}
+
+#gallery figure {
+  position: relative;
+}
+
+#gallery figure img {
+  opacity: 0.7;
+  width: 100%;
+  -webkit-transition: opacity 300ms linear;
+  transition: opacity 300ms linear;
+}
+
+#gallery figure img:hover {
+  opacity: 1;
+}
+
+#gallery figure figcaption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: -12%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#gallery figure figcaption a {
+  color: white;
+  text-decoration: underline;
+  font-size: 2vw;
+  margin-bottom: 5vh;
+}
+
+#gallery figure figcaption h2 {
+  font-size: 2vw;
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    width: 95%;
+  }
+  #gallery {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 6vh 2vw;
+    margin-bottom: 10vh;
+  }
+}

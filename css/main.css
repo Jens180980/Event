@@ -98,3 +98,15 @@ main {
   width: 100%;
   padding: 0 1rem;
 }
+
+@media screen and (max-width: 800px) {
+  main {
+    width: 95%;
+  }
+  #top article {
+    width: 100%;
+  }
+  #middle {
+    display: block;
+  }
+}

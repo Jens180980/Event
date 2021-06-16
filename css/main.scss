@@ -96,3 +96,23 @@ main{
 ////                    MEDIA QUERIES
 ////
 ///////////////////////////////////////////////////////////////////////
+@media screen and (max-width: 800px) {
+
+main{
+    width: 95%;
+}
+
+// TOP SECTION
+#top{
+
+    article{
+        width: 100%;
+    }
+}
+
+// MIDDLE SECTION
+#middle{
+    display: block;
+}
+
+} // MQ 800PX ENDS
